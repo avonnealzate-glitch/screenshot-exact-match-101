@@ -146,13 +146,35 @@ function Index() {
         </div>
       </section>
 
-      {/* SERVICE CARDS */}
+      {/* 6 PILLARS */}
       <section className="py-24">
         <div className="mx-auto max-w-[1400px] px-5">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Six Pillars</p>
-            <h2 className="mt-3 font-display text-5xl font-semibold">Pick Your AI Agent</h2>
+          <h2 className="text-center font-display text-5xl font-semibold">The 6 Pillars of Get Day AI</h2>
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {pillars.map((p) => {
+              const Icon = p.icon;
+              return (
+                <div key={p.n} className="flex items-start gap-4 rounded-2xl border border-gold/30 bg-gold/10 p-6">
+                  <div className="font-display text-4xl font-bold leading-none text-gold">{p.n}</div>
+                  <div>
+                    <div className="flex items-center gap-2 text-xs font-bold tracking-widest text-gold"><Icon size={16} />{p.label}</div>
+                    <div className="mt-2 text-sm text-foreground/85">{p.copy}</div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
+        </div>
+      </section>
+
+      {/* SERVICE CARDS — AI RECEPTIONISTS */}
+      <section id="agents" className="border-t border-border/40 bg-navy py-24">
+        <div className="mx-auto max-w-[1400px] px-5">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Specializing in AI Receptionists for Your Business</p>
+            <h2 className="mt-3 font-display text-5xl font-semibold">Pick Your Agent</h2>
+          </div>
+
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
               <div key={s.name} className="group flex flex-col rounded-2xl border border-border/60 bg-card p-7 transition-all hover:border-gold/60 hover:shadow-[0_20px_40px_-20px_rgba(201,168,76,0.4)]">
