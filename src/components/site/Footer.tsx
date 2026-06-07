@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 const links = [
   { to: "/legal", label: "Legal" },
   { to: "/cdl", label: "CDL Schools AI" },
-  { to: "/healthcare", label: "Health Career Schools" },
+  { to: "/healthcare", label: "Health Careers Schools" },
   { to: "/realtors", label: "Real Estate" },
   { to: "/home-services", label: "Home Services" },
   { to: "/geo", label: "AI Search Visibility" },
