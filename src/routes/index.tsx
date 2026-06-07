@@ -37,7 +37,7 @@ const stats = [
 const services = [
   { name: "Legal AI", agent: "Casey", copy: "Casey answers every call to your firm — after hours, weekends, during court. Qualifies the case, books the consultation, makes sure no client goes to your competitor because no one picked up.", to: "/legal" as const },
   { name: "CDL & Career Schools AI", agent: "Lane", copy: "Lane answers every prospective student inquiry instantly. Qualifies program interest, schedule fit, and start date — and books their admissions appointment before they call another school.", to: "/cdl" as const },
-  { name: "Health Career Schools AI", agent: "Riley", copy: "Riley answers every inquiry for your healthcare career school 24/7. Qualifies students by program, availability, and readiness — and fills your enrollment calendar around the clock.", to: "/healthcare" as const },
+  { name: "Health Careers Schools AI", agent: "Riley", copy: "Riley answers every inquiry for your healthcare careers school 24/7. Qualifies students by program, availability, and readiness — and fills your enrollment calendar around the clock.", to: "/healthcare" as const },
   { name: "Real Estate AI", agent: "Haven", copy: "Haven answers buyer and seller inquiries the moment they call. Qualifies by timeline, budget, and property type — and books showings directly into your agent's calendar.", to: "/realtors" as const },
   { name: "Home Services AI", agent: "Thomas", copy: "Thomas answers every service call — day, night, and weekends. Qualifies by service needed, location, and urgency — and books the appointment before they call your competitor.", to: "/home-services" as const },
   { name: "AI Search Visibility", agent: "Gia", copy: "45% of customers now use AI to find businesses like yours. Could they find you? Get Day AI improves your chances of being found and recommended on ChatGPT and other AI apps — before your competitors even know they should be there.", to: "/geo" as const },
@@ -102,7 +102,7 @@ function Index() {
             {[
               { label: "Legal AI", to: "/legal" as const },
               { label: "CDL Schools AI", to: "/cdl" as const },
-              { label: "Health Career", to: "/healthcare" as const },
+              { label: "Health Careers AI", to: "/healthcare" as const },
               { label: "Real Estate AI", to: "/realtors" as const },
               { label: "Home Services AI", to: "/home-services" as const },
               { label: "AI Search Visibility", to: "/geo" as const },
