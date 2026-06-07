@@ -9,8 +9,56 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as RealtorsRouteImport } from './routes/realtors'
+import { Route as LegalRouteImport } from './routes/legal'
+import { Route as HomeServicesRouteImport } from './routes/home-services'
+import { Route as HealthcareRouteImport } from './routes/healthcare'
+import { Route as GeoRouteImport } from './routes/geo'
+import { Route as FreeRouteImport } from './routes/free'
+import { Route as CdlRouteImport } from './routes/cdl'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const RealtorsRoute = RealtorsRouteImport.update({
+  id: '/realtors',
+  path: '/realtors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalRoute = LegalRouteImport.update({
+  id: '/legal',
+  path: '/legal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomeServicesRoute = HomeServicesRouteImport.update({
+  id: '/home-services',
+  path: '/home-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HealthcareRoute = HealthcareRouteImport.update({
+  id: '/healthcare',
+  path: '/healthcare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GeoRoute = GeoRouteImport.update({
+  id: '/geo',
+  path: '/geo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FreeRoute = FreeRouteImport.update({
+  id: '/free',
+  path: '/free',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CdlRoute = CdlRouteImport.update({
+  id: '/cdl',
+  path: '/cdl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +67,144 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/cdl': typeof CdlRoute
+  '/free': typeof FreeRoute
+  '/geo': typeof GeoRoute
+  '/healthcare': typeof HealthcareRoute
+  '/home-services': typeof HomeServicesRoute
+  '/legal': typeof LegalRoute
+  '/realtors': typeof RealtorsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/cdl': typeof CdlRoute
+  '/free': typeof FreeRoute
+  '/geo': typeof GeoRoute
+  '/healthcare': typeof HealthcareRoute
+  '/home-services': typeof HomeServicesRoute
+  '/legal': typeof LegalRoute
+  '/realtors': typeof RealtorsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/cdl': typeof CdlRoute
+  '/free': typeof FreeRoute
+  '/geo': typeof GeoRoute
+  '/healthcare': typeof HealthcareRoute
+  '/home-services': typeof HomeServicesRoute
+  '/legal': typeof LegalRoute
+  '/realtors': typeof RealtorsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/cdl'
+    | '/free'
+    | '/geo'
+    | '/healthcare'
+    | '/home-services'
+    | '/legal'
+    | '/realtors'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/cdl'
+    | '/free'
+    | '/geo'
+    | '/healthcare'
+    | '/home-services'
+    | '/legal'
+    | '/realtors'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/cdl'
+    | '/free'
+    | '/geo'
+    | '/healthcare'
+    | '/home-services'
+    | '/legal'
+    | '/realtors'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CdlRoute: typeof CdlRoute
+  FreeRoute: typeof FreeRoute
+  GeoRoute: typeof GeoRoute
+  HealthcareRoute: typeof HealthcareRoute
+  HomeServicesRoute: typeof HomeServicesRoute
+  LegalRoute: typeof LegalRoute
+  RealtorsRoute: typeof RealtorsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/realtors': {
+      id: '/realtors'
+      path: '/realtors'
+      fullPath: '/realtors'
+      preLoaderRoute: typeof RealtorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal': {
+      id: '/legal'
+      path: '/legal'
+      fullPath: '/legal'
+      preLoaderRoute: typeof LegalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/home-services': {
+      id: '/home-services'
+      path: '/home-services'
+      fullPath: '/home-services'
+      preLoaderRoute: typeof HomeServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/healthcare': {
+      id: '/healthcare'
+      path: '/healthcare'
+      fullPath: '/healthcare'
+      preLoaderRoute: typeof HealthcareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/geo': {
+      id: '/geo'
+      path: '/geo'
+      fullPath: '/geo'
+      preLoaderRoute: typeof GeoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/free': {
+      id: '/free'
+      path: '/free'
+      fullPath: '/free'
+      preLoaderRoute: typeof FreeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cdl': {
+      id: '/cdl'
+      path: '/cdl'
+      fullPath: '/cdl'
+      preLoaderRoute: typeof CdlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,7 +217,25 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CdlRoute: CdlRoute,
+  FreeRoute: FreeRoute,
+  GeoRoute: GeoRoute,
+  HealthcareRoute: HealthcareRoute,
+  HomeServicesRoute: HomeServicesRoute,
+  LegalRoute: LegalRoute,
+  RealtorsRoute: RealtorsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
