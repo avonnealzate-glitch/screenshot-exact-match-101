@@ -77,8 +77,8 @@ function Index() {
     <SiteLayout>
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border/40">
-        <img src={heroImg} alt="Get Day AI" width={1920} height={1024} className="absolute inset-0 h-full w-full object-cover opacity-90" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/70 to-navy-deep/30" />
+        <img src={heroImg} alt="" aria-hidden="true" width={1920} height={1024} className="absolute inset-0 h-full w-full object-cover opacity-40" />
+        <div className="absolute inset-0 bg-navy-deep/85" />
         <div className="relative mx-auto grid max-w-[1400px] gap-10 px-5 py-20 md:grid-cols-[1.4fr_1fr] md:py-28">
           <div>
             <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Custom AI Revenue Generating Systems</p>
