@@ -50,6 +50,7 @@ const servicesInclude = [
   ["Acquisitions Consulting", "Strategic guidance for business buyers and sellers — valuation, due diligence support, and deal structuring — so you don't leave money on the table."],
   ["Speech Writing + Speaker Tools", "High-impact speeches and AI-powered speaker tools built for executives, professionals, and educators — written for your voice, your audience, and your outcome."],
   ["Grant Writing (AI-Assisted)", "AI-accelerated grant writing that finds the right funding opportunities and produces competitive applications — without the six-week turnaround."],
+  ["AI Search Visibility", "45% of customers now use AI to find businesses like yours. Could they find you? Get Day AI improves your chances of being found and recommended on ChatGPT and other AI apps — before your competitors even know they should be there."],
 ];
 
 const steps = [
