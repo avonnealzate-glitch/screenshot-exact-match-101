@@ -18,13 +18,14 @@ export const Route = createFileRoute("/")({
 });
 
 const pillars = [
-  { n: "1", label: "LEGAL", icon: Scale, copy: "Casey answers every call to your firm." },
-  { n: "2", label: "CDL SCHOOLS", icon: GraduationCap, copy: "Lane books admissions appointments." },
-  { n: "3", label: "HEALTH CAREER", icon: HeartPulse, copy: "Riley fills your enrollment calendar." },
-  { n: "4", label: "REAL ESTATE", icon: Home, copy: "Haven books showings on autopilot." },
-  { n: "5", label: "HOME SERVICES", icon: Wrench, copy: "Thomas books the appointment first." },
+  { n: "1", label: "AI RECEPTIONISTS", icon: Headset, copy: "Answer. Qualify. Book. 24/7." },
+  { n: "2", label: "AI AGENTS & AUTOMATION", icon: Bot, copy: "Automate the work. Scale your impact." },
+  { n: "3", label: "BUSINESS STRATEGY & WRITING", icon: BarChart3, copy: "Plan. Forecast. Grow. With confidence." },
+  { n: "4", label: "COMMUNICATION & INFLUENCE", icon: Mic, copy: "Words that move people. Strategies that win." },
+  { n: "5", label: "OPERATIONS & PEOPLE", icon: Users, copy: "Build stronger systems. Develop stronger teams." },
   { n: "6", label: "AI SEARCH VISIBILITY", icon: Search, copy: "Get found on ChatGPT and other AI apps." },
 ];
+
 
 const stats = [
   { v: "<60s", l: "Answer every call in under 60 seconds" },
