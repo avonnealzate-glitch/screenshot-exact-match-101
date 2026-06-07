@@ -102,6 +102,7 @@ function Index() {
               { label: "Health Career", to: "/healthcare" as const },
               { label: "Real Estate AI", to: "/realtors" as const },
               { label: "Home Services AI", to: "/home-services" as const },
+              { label: "AI Search Visibility", to: "/geo" as const },
             ].map((b) => (
               <Link key={b.to} to={b.to} className="group flex items-center justify-between rounded-full border border-gold/40 bg-navy/50 px-5 py-3 text-sm font-medium text-foreground backdrop-blur transition-all hover:border-gold hover:bg-gold/10">
                 {b.label}
