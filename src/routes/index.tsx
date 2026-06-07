@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, Search, Scale, GraduationCap, HeartPulse, Home, Wrench, Star, ArrowRight } from "lucide-react";
+import { Phone, Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
 import heroImg from "../assets/hero.jpg";
+
 import novaImg from "../assets/nova-day.jpg";
 import { SiteLayout } from "../components/site/SiteLayout";
 
@@ -17,13 +18,14 @@ export const Route = createFileRoute("/")({
 });
 
 const pillars = [
-  { n: "1", label: "LEGAL", icon: Scale, copy: "Casey answers every call to your firm." },
-  { n: "2", label: "CDL SCHOOLS", icon: GraduationCap, copy: "Lane books admissions appointments." },
-  { n: "3", label: "HEALTH CAREER", icon: HeartPulse, copy: "Riley fills your enrollment calendar." },
-  { n: "4", label: "REAL ESTATE", icon: Home, copy: "Haven books showings on autopilot." },
-  { n: "5", label: "HOME SERVICES", icon: Wrench, copy: "Thomas books the appointment first." },
+  { n: "1", label: "AI RECEPTIONISTS", icon: Headset, copy: "Answer. Qualify. Book. 24/7." },
+  { n: "2", label: "AI AGENTS & AUTOMATION", icon: Bot, copy: "Automate the work. Scale your impact." },
+  { n: "3", label: "BUSINESS STRATEGY & WRITING", icon: BarChart3, copy: "Plan. Forecast. Grow. With confidence." },
+  { n: "4", label: "COMMUNICATION & INFLUENCE", icon: Mic, copy: "Words that move people. Strategies that win." },
+  { n: "5", label: "OPERATIONS & PEOPLE", icon: Users, copy: "Build stronger systems. Develop stronger teams." },
   { n: "6", label: "AI SEARCH VISIBILITY", icon: Search, copy: "Get found on ChatGPT and other AI apps." },
 ];
+
 
 const stats = [
   { v: "<60s", l: "Answer every call in under 60 seconds" },
@@ -144,13 +146,35 @@ function Index() {
         </div>
       </section>
 
-      {/* SERVICE CARDS */}
+      {/* 6 PILLARS */}
       <section className="py-24">
         <div className="mx-auto max-w-[1400px] px-5">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Six Pillars</p>
-            <h2 className="mt-3 font-display text-5xl font-semibold">Pick Your AI Agent</h2>
+          <h2 className="text-center font-display text-5xl font-semibold">The 6 Pillars of Get Day AI</h2>
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {pillars.map((p) => {
+              const Icon = p.icon;
+              return (
+                <div key={p.n} className="flex items-start gap-4 rounded-2xl border border-gold/30 bg-gold/10 p-6">
+                  <div className="font-display text-4xl font-bold leading-none text-gold">{p.n}</div>
+                  <div>
+                    <div className="flex items-center gap-2 text-xs font-bold tracking-widest text-gold"><Icon size={16} />{p.label}</div>
+                    <div className="mt-2 text-sm text-foreground/85">{p.copy}</div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
+        </div>
+      </section>
+
+      {/* SERVICE CARDS — AI RECEPTIONISTS */}
+      <section id="agents" className="border-t border-border/40 bg-navy py-24">
+        <div className="mx-auto max-w-[1400px] px-5">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Specializing in AI Receptionists for Your Business</p>
+            <h2 className="mt-3 font-display text-5xl font-semibold">Pick Your Agent</h2>
+          </div>
+
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
               <div key={s.name} className="group flex flex-col rounded-2xl border border-border/60 bg-card p-7 transition-all hover:border-gold/60 hover:shadow-[0_20px_40px_-20px_rgba(201,168,76,0.4)]">
