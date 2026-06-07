@@ -8,7 +8,7 @@ import { SiteLayout } from "../components/site/SiteLayout";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Get Day AI — Custom AI Revenue Generating Systems" },
+      { title: "Get Day AI | Automate for Ease, Efficiency & More Revenue" },
       { name: "description", content: "AI That Fits. Businesses That Scale. Custom AI agents that answer every call, qualify leads, and book appointments 24/7." },
       { property: "og:title", content: "Get Day AI — AI That Fits. Businesses That Scale." },
       { property: "og:description", content: "Custom AI Revenue Generating Systems built for every business — designed by Dr. Nova Day, EdD." },
@@ -87,7 +87,7 @@ function Index() {
               <br />Businesses That <span className="text-gold">Scale.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-foreground/85">
-              Dedicated AI agents that answer every call, qualify every lead, and book every appointment — 24/7 — so you stop losing revenue to voicemail.
+              AI Created & Customized for You. AI That Fits. AI Your Way.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="tel:+14702292626" className="inline-flex items-center gap-2 rounded-full border-2 border-gold bg-transparent px-6 py-3 text-sm font-semibold text-gold transition-all hover:bg-gold hover:text-navy-deep">
