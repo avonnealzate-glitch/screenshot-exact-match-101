@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star, Settings, LineChart } from "lucide-react";
+import { Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
 import novaImg from "../assets/nova-white-suit.png.asset.json";
 import { SiteLayout } from "../components/site/SiteLayout";
 
@@ -102,37 +102,6 @@ function Index() {
           </div>
 
           <div className="relative flex h-full min-h-[420px] items-end justify-center md:min-h-[640px] md:justify-end">
-            <svg
-              aria-hidden
-              viewBox="0 0 500 600"
-              className="pointer-events-none absolute inset-0 h-full w-full"
-              preserveAspectRatio="xMidYMid meet"
-            >
-              <path
-                d="M 60 540 A 320 320 0 0 1 60 100"
-                fill="none"
-                stroke="#c9a84c"
-                strokeWidth="2"
-                strokeDasharray="2 8"
-                strokeLinecap="round"
-              />
-            </svg>
-
-            {[
-              { Icon: Phone, top: "8%", left: "18%" },
-              { Icon: Settings, top: "32%", left: "4%" },
-              { Icon: LineChart, top: "62%", left: "4%" },
-              { Icon: Users, top: "86%", left: "18%" },
-            ].map(({ Icon, top, left }, i) => (
-              <div
-                key={i}
-                className="absolute flex h-11 w-11 items-center justify-center rounded-full border border-gold/60 bg-[#0a1628] text-gold shadow-[0_0_20px_rgba(201,168,76,0.25)]"
-                style={{ top, left }}
-              >
-                <Icon size={18} />
-              </div>
-            ))}
-
             <img
               src={novaImg.url}
               alt="Dr. Nova Day"
