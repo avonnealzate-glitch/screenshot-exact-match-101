@@ -89,7 +89,7 @@ function Index() {
           <h1 className="font-display text-4xl font-semibold leading-[1.1] md:text-6xl">
             AI for <span className="text-gold">Ease</span>, <span className="text-gold">Efficiency</span>, <span className="text-gold">Revenue</span>.
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl font-display text-lg text-foreground/85">
+          <p className="mx-auto mt-5 max-w-2xl font-display text-lg italic text-foreground/85">
             AI Created &amp; <span className="text-gold">Customized</span> for You. AI That Fits. AI <span className="text-gold">YOUR</span> Way.
           </p>
         </div>
