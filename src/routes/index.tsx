@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
-import heroImg from "../assets/hero.jpg";
-
+import heroAsset from "../assets/hero.png.asset.json";
 import novaImg from "../assets/nova-white-suit.png.asset.json";
 import { SiteLayout } from "../components/site/SiteLayout";
+
+const heroImg = heroAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -76,62 +77,24 @@ function Index() {
   return (
     <SiteLayout>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-border/40">
-        <img src={heroImg} alt="Dr. Nova Day" width={1920} height={1024} className="absolute inset-0 h-full w-full object-cover object-right" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/80 to-transparent" />
-        <div className="relative mx-auto grid max-w-[1400px] gap-10 px-5 py-20 md:grid-cols-[1.4fr_1fr] md:py-28">
-          <div>
-            <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Custom AI Revenue Generating Systems</p>
-            <h1 className="mt-4 font-display text-5xl font-semibold leading-[1.05] md:text-7xl">
-              AI That <span className="text-gold">Fits.</span>
-              <br />Businesses That <span className="text-gold">Scale.</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-lg text-foreground/85">
-              AI Created & Customized for You. AI That Fits. AI Your Way.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="tel:+14702292626" className="inline-flex items-center gap-2 rounded-full border-2 border-gold bg-transparent px-6 py-3 text-sm font-semibold text-gold transition-all hover:bg-gold hover:text-navy-deep">
-                <Phone size={16} /> Hear Ava Work — +1 (470) 229-2626
-              </a>
-              <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all hover:bg-gold-bright">
-                Book a Demo
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3 self-end">
-            {[
-              { label: "Legal AI", to: "/legal" as const },
-              { label: "CDL Schools AI", to: "/cdl" as const },
-              { label: "Health Careers AI", to: "/healthcare" as const },
-              { label: "Real Estate AI", to: "/realtors" as const },
-              { label: "Home Services AI", to: "/home-services" as const },
-              { label: "AI Search Visibility", to: "/geo" as const },
-            ].map((b) => (
-              <Link key={b.to} to={b.to} className="group flex items-center justify-between rounded-full border border-gold/40 bg-navy/50 px-5 py-3 text-sm font-medium text-foreground backdrop-blur transition-all hover:border-gold hover:bg-gold/10">
-                {b.label}
-                <ArrowRight size={16} className="text-gold transition-transform group-hover:translate-x-1" />
-              </Link>
-            ))}
-          </div>
+      <section className="relative border-b border-border/40 bg-navy-deep">
+        <h1 className="sr-only">Get Day AI — AI That Fits. Businesses That Scale.</h1>
+        <img
+          src={heroImg}
+          alt="Get Day AI — AI That Fits. Businesses That Scale. Dr. Nova Day, EdD"
+          width={1920}
+          height={820}
+          className="block w-full h-auto"
+        />
+        <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-center gap-3 px-5 py-6">
+          <a href="tel:+14702292626" className="inline-flex items-center gap-2 rounded-full border-2 border-gold bg-transparent px-6 py-3 text-sm font-semibold text-gold transition-all hover:bg-gold hover:text-navy-deep">
+            <Phone size={16} /> Hear Ava Work — +1 (470) 229-2626
+          </a>
+          <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all hover:bg-gold-bright">
+            Book a Demo
+          </a>
         </div>
 
-        {/* Gold pillar bar */}
-        <div className="relative border-t border-gold/40 bg-gold text-navy-deep">
-          <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-4 px-5 py-6 md:grid-cols-3 lg:grid-cols-6">
-            {pillars.map((p) => {
-              const Icon = p.icon;
-              return (
-                <div key={p.n} className="flex items-start gap-3">
-                  <div className="font-display text-2xl font-bold leading-none">{p.n}</div>
-                  <div>
-                    <div className="flex items-center gap-2 text-[11px] font-bold tracking-widest"><Icon size={14} />{p.label}</div>
-                    <div className="mt-1 text-[12px] leading-snug opacity-90">{p.copy}</div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
       </section>
 
       {/* PROOF BAR */}
