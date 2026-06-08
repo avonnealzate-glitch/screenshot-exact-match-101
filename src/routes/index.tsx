@@ -105,11 +105,11 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative flex min-h-[280px] items-end justify-center md:min-h-0 md:justify-end">
+          <div className="relative flex min-h-[280px] items-end justify-center md:min-h-[600px] md:justify-end">
             <img
               src={novaImg.url}
               alt="Dr. Nova Day"
-              className="relative z-10 h-full w-auto max-w-full object-contain object-bottom-right"
+              className="relative z-10 h-full max-h-[280px] w-auto object-contain md:max-h-none md:h-full md:w-full md:object-cover md:object-top"
             />
           </div>
         </div>
