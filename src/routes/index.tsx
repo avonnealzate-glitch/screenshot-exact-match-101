@@ -87,17 +87,13 @@ function Index() {
         />
         <div className="mx-auto max-w-[1400px] px-5 pt-0 pb-10 text-center md:pb-14">
           <h1 className="font-display text-4xl font-semibold leading-[1.1] md:text-6xl">
-            Automate for <span className="text-gold">Ease</span>, <span className="text-gold">Efficiency</span>, More <span className="text-gold">Revenue</span>.
+            AI for <span className="text-gold">Ease</span>, <span className="text-gold">Efficiency</span>, <span className="text-gold">Revenue</span>.
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-foreground/85">
             AI Created &amp; Customized for You. AI That Fits. AI Your Way.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all hover:bg-gold-bright">
-              Book a Demo
-            </a>
-          </div>
         </div>
+
 
 
 
