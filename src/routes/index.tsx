@@ -44,6 +44,7 @@ const services = [
 
 const servicesInclude = [
   ["AI Agents", "Purpose-built AI agents designed around your specific workflows — intake, follow-up, routing, reporting — so your team eliminates the manual work that's costing them hours every week."],
+  ["AI Search Visibility", "45% of customers now use AI to find businesses like yours. Could they find you? Get Day AI improves your chances of being found and recommended on ChatGPT and other AI apps — before your competitors even know they should be there.", true],
   ["Workflow Automation", "We identify the tasks your team does over and over and build AI to do them instead — faster, consistently, and without sick days. Scoped and built custom for your business."],
   ["AI Prospecting & Client Building", "An automated prospecting system that identifies, reaches, and nurtures potential clients on a defined schedule — so your pipeline grows while your team works the deals already in motion."],
   ["Business Plan Writing", "A professionally structured business plan built around your actual numbers, market, and goals — ready for lenders, investors, or strategic decisions."],
@@ -51,8 +52,7 @@ const servicesInclude = [
   ["Acquisitions Consulting", "Strategic guidance for business buyers and sellers — valuation, due diligence support, and deal structuring — so you don't leave money on the table."],
   ["Speech Writing + Speaker Tools", "High-impact speeches and AI-powered speaker tools built for executives, professionals, and educators — written for your voice, your audience, and your outcome."],
   ["Grant Writing (AI-Assisted)", "AI-accelerated grant writing that finds the right funding opportunities and produces competitive applications — without the six-week turnaround."],
-  ["AI Search Visibility", "45% of customers now use AI to find businesses like yours. Could they find you? Get Day AI improves your chances of being found and recommended on ChatGPT and other AI apps — before your competitors even know they should be there."],
-];
+] as const;
 
 const steps = [
   "You get a dedicated AI agent trained on your business",
@@ -219,19 +219,8 @@ function Index() {
         </div>
       </section>
 
-      {/* HEAR IT FOR YOURSELF */}
-      <section id="contact" className="bg-gold py-24 text-navy-deep">
-        <div className="mx-auto max-w-[1000px] px-5 text-center">
-          <h2 className="font-display text-5xl font-semibold md:text-6xl">Hear It For Yourself</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-85">
-            Call Ava right now and hear exactly what your customers will hear — a live AI that answers, qualifies, and books appointments 24/7.
-          </p>
-          <a href="tel:+14702292626" className="mt-8 inline-flex items-center gap-3 rounded-full bg-navy-deep px-8 py-4 text-lg font-semibold text-gold transition-transform hover:scale-105">
-            <Phone size={20} /> Call Ava Now
-          </a>
-          <div className="mt-6 font-display text-5xl font-bold">(470) 229-2626</div>
-        </div>
-      </section>
+
+
 
       {/* TESTIMONIALS */}
       <section className="py-24">
@@ -264,16 +253,25 @@ function Index() {
             </p>
           </div>
           <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {servicesInclude.map(([title, copy]) => (
-              <div key={title} className="rounded-xl border border-border/60 bg-card/60 p-6">
-                <div className="text-[10px] font-bold tracking-widest text-gold">CUSTOM · 1-ON-1</div>
-                <h3 className="mt-3 font-display text-xl font-semibold">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-foreground/70">{copy}</p>
-                <a href="#contact" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold hover:text-gold-bright">
-                  Get Started <ArrowRight size={14} />
-                </a>
-              </div>
-            ))}
+            {servicesInclude.map((entry) => {
+              const [title, copy, isNew] = entry as readonly [string, string, boolean?];
+              return (
+                <div key={title} className="rounded-xl border border-border/60 bg-card/60 p-6">
+                  <h3 className="font-display text-xl font-semibold">
+                    {title}
+                    {isNew && (
+                      <span className="ml-2 inline-flex items-center rounded-full bg-gold px-2 py-0.5 align-middle text-[10px] font-bold tracking-widest text-navy-deep">
+                        NEW
+                      </span>
+                    )}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground/70">{copy}</p>
+                  <a href="tel:+14702292626" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold hover:text-gold-bright">
+                    Get Started <ArrowRight size={14} />
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
