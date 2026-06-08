@@ -1,10 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
-import heroAsset from "../assets/hero.png.asset.json";
+import { Phone, Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star, Settings, LineChart } from "lucide-react";
 import novaImg from "../assets/nova-white-suit.png.asset.json";
 import { SiteLayout } from "../components/site/SiteLayout";
 
-const heroImg = heroAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -77,26 +75,71 @@ function Index() {
   return (
     <SiteLayout>
       {/* HERO */}
-      <section className="relative border-b border-border/40 bg-navy-deep">
-        <img
-          src={heroImg}
-          alt="Get Day AI — Dr. Nova Day, EdD"
-          width={1920}
-          height={820}
-          className="block w-full h-auto"
-        />
-        <div className="mx-auto max-w-[1400px] px-5 pt-0 pb-10 text-center md:pb-14">
-          <h1 className="font-display text-4xl font-semibold leading-[1.1] md:text-6xl">
-            AI for <span className="text-gold">Ease</span>, <span className="text-gold">Efficiency</span>, <span className="text-gold">Revenue</span>.
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl font-display text-lg italic text-foreground/85">
-            AI Created &amp; <span className="text-gold">Customized</span> for You. AI That Fits. AI <span className="text-gold">YOUR</span> Way.
-          </p>
+      <section className="relative overflow-hidden border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
+        <div className="absolute inset-y-0 left-0 w-[4px] bg-gold" />
+
+        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-10 px-8 py-16 md:grid-cols-[1.1fr_1fr] md:gap-6 md:py-20">
+          <div className="relative z-10">
+            <h1 className="font-display text-5xl font-semibold leading-[1.05] text-white md:text-7xl">
+              Get Day AI
+            </h1>
+
+            <div className="mt-8 inline-flex flex-wrap items-center gap-x-3 gap-y-2 rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[11px] font-bold tracking-[0.25em] text-gold md:text-xs">
+              <span>CALLS</span><span className="opacity-60">·</span>
+              <span>INTAKE</span><span className="opacity-60">·</span>
+              <span>SCHEDULING</span><span className="opacity-60">·</span>
+              <span>STRATEGY</span><span className="opacity-60">·</span>
+              <span>OPERATIONS</span>
+            </div>
+
+            <h2 className="mt-10 font-display text-4xl font-semibold italic leading-[1.1] text-gold md:text-6xl">
+              AI for Ease, Efficiency, Revenue.
+            </h2>
+
+            <p className="mt-6 font-display text-4xl font-semibold italic leading-[1.1] text-white md:text-6xl">
+              AI Created &amp; Customized for You. AI That Fits. AI <span className="font-bold">YOUR</span> Way.
+            </p>
+          </div>
+
+          <div className="relative flex h-full min-h-[420px] items-end justify-center md:min-h-[640px] md:justify-end">
+            <svg
+              aria-hidden
+              viewBox="0 0 500 600"
+              className="pointer-events-none absolute inset-0 h-full w-full"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path
+                d="M 60 540 A 320 320 0 0 1 60 100"
+                fill="none"
+                stroke="#c9a84c"
+                strokeWidth="2"
+                strokeDasharray="2 8"
+                strokeLinecap="round"
+              />
+            </svg>
+
+            {[
+              { Icon: Phone, top: "8%", left: "18%" },
+              { Icon: Settings, top: "32%", left: "4%" },
+              { Icon: LineChart, top: "62%", left: "4%" },
+              { Icon: Users, top: "86%", left: "18%" },
+            ].map(({ Icon, top, left }, i) => (
+              <div
+                key={i}
+                className="absolute flex h-11 w-11 items-center justify-center rounded-full border border-gold/60 bg-[#0a1628] text-gold shadow-[0_0_20px_rgba(201,168,76,0.25)]"
+                style={{ top, left }}
+              >
+                <Icon size={18} />
+              </div>
+            ))}
+
+            <img
+              src={novaImg.url}
+              alt="Dr. Nova Day"
+              className="relative z-10 h-full max-h-[640px] w-auto object-contain object-bottom"
+            />
+          </div>
         </div>
-
-
-
-
       </section>
 
       {/* 6 PILLARS */}
