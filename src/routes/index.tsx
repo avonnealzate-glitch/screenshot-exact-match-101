@@ -96,11 +96,11 @@ function Index() {
               <span>OPERATIONS</span>
             </div>
 
-            <h2 className="mt-10 font-display text-4xl font-semibold italic leading-[1.1] text-gold md:text-6xl">
+            <h2 className="mt-10 text-center font-display text-4xl font-semibold italic leading-[1.1] text-gold md:text-6xl">
               AI for Ease, Efficiency, Revenue.
             </h2>
 
-            <p className="mt-6 font-display text-3xl font-semibold italic leading-[1.1] text-white md:text-5xl">
+            <p className="mt-6 text-center font-display text-3xl font-semibold italic leading-[1.1] text-white md:text-5xl">
               AI Created &amp; Customized for You. AI That Fits. AI <span className="font-bold">YOUR</span> Way.
             </p>
           </div>
