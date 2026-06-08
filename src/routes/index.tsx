@@ -85,7 +85,7 @@ function Index() {
           height={820}
           className="block w-full h-auto"
         />
-        <div className="mx-auto max-w-[1400px] px-5 py-10 text-center md:py-14">
+        <div className="mx-auto max-w-[1400px] px-5 pt-0 pb-10 text-center md:pb-14">
           <h1 className="font-display text-4xl font-semibold leading-[1.1] md:text-6xl">
             Automate for <span className="text-gold">Ease</span>, <span className="text-gold">Efficiency</span>, More <span className="text-gold">Revenue</span>.
           </h1>
@@ -93,14 +93,12 @@ function Index() {
             AI Created &amp; Customized for You. AI That Fits. AI Your Way.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href="tel:+14702292626" className="inline-flex items-center gap-2 rounded-full border-2 border-gold bg-transparent px-6 py-3 text-sm font-semibold text-gold transition-all hover:bg-gold hover:text-navy-deep">
-              <Phone size={16} /> Hear Ava Work — +1 (470) 229-2626
-            </a>
             <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all hover:bg-gold-bright">
               Book a Demo
             </a>
           </div>
         </div>
+
 
 
       </section>
