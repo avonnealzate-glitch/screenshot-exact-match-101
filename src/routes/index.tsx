@@ -234,7 +234,7 @@ function Index() {
         <div className="mx-auto grid max-w-[1200px] gap-12 px-5 md:grid-cols-[1fr_1.3fr] md:items-center">
           <div className="relative">
             <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-gold/30 to-transparent blur-2xl" />
-            <img src={novaImg} alt="Dr. Nova Day, EdD" width={1024} height={1536} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
+            <img src={novaImg.url} alt="Dr. Nova Day, EdD" width={1366} height={768} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
           </div>
           <div>
             <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">About</p>
