@@ -84,7 +84,7 @@ function Index() {
               Get Day AI
             </h1>
 
-            <div className="mt-8 inline-flex flex-wrap items-center gap-x-3 gap-y-2 rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[11px] font-bold tracking-[0.25em] text-gold md:text-xs">
+            <div className="mt-8 inline-flex items-center gap-x-3 rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[11px] font-bold tracking-[0.25em] text-gold md:text-xs">
               <span>CALLS</span><span className="opacity-60">·</span>
               <span>INTAKE</span><span className="opacity-60">·</span>
               <span>SCHEDULING</span><span className="opacity-60">·</span>
@@ -96,7 +96,7 @@ function Index() {
               AI for Ease, Efficiency, Revenue.
             </h2>
 
-            <p className="mt-6 font-display text-4xl font-semibold italic leading-[1.1] text-white md:text-6xl">
+            <p className="mt-6 font-display text-3xl font-semibold italic leading-[1.1] text-white md:text-5xl">
               AI Created &amp; Customized for You. AI That Fits. AI <span className="font-bold">YOUR</span> Way.
             </p>
           </div>
