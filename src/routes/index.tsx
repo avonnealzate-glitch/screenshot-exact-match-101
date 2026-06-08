@@ -44,6 +44,7 @@ const services = [
 
 const servicesInclude = [
   ["AI Agents", "Purpose-built AI agents designed around your specific workflows — intake, follow-up, routing, reporting — so your team eliminates the manual work that's costing them hours every week."],
+  ["AI Search Visibility", "45% of customers now use AI to find businesses like yours. Could they find you? Get Day AI improves your chances of being found and recommended on ChatGPT and other AI apps — before your competitors even know they should be there.", true],
   ["Workflow Automation", "We identify the tasks your team does over and over and build AI to do them instead — faster, consistently, and without sick days. Scoped and built custom for your business."],
   ["AI Prospecting & Client Building", "An automated prospecting system that identifies, reaches, and nurtures potential clients on a defined schedule — so your pipeline grows while your team works the deals already in motion."],
   ["Business Plan Writing", "A professionally structured business plan built around your actual numbers, market, and goals — ready for lenders, investors, or strategic decisions."],
@@ -51,8 +52,7 @@ const servicesInclude = [
   ["Acquisitions Consulting", "Strategic guidance for business buyers and sellers — valuation, due diligence support, and deal structuring — so you don't leave money on the table."],
   ["Speech Writing + Speaker Tools", "High-impact speeches and AI-powered speaker tools built for executives, professionals, and educators — written for your voice, your audience, and your outcome."],
   ["Grant Writing (AI-Assisted)", "AI-accelerated grant writing that finds the right funding opportunities and produces competitive applications — without the six-week turnaround."],
-  ["AI Search Visibility", "45% of customers now use AI to find businesses like yours. Could they find you? Get Day AI improves your chances of being found and recommended on ChatGPT and other AI apps — before your competitors even know they should be there."],
-];
+] as const;
 
 const steps = [
   "You get a dedicated AI agent trained on your business",
