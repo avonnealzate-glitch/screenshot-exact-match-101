@@ -78,17 +78,17 @@ function Index() {
       <section className="relative overflow-hidden border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
         <div className="absolute inset-y-0 left-0 w-[4px] bg-gold" />
 
-        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-10 px-8 py-16 md:grid-cols-[1.2fr_1fr] md:gap-6 md:py-20">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-stretch gap-10 px-8 py-8 md:grid-cols-[1.2fr_1fr] md:gap-6 md:py-20">
           <div className="relative z-10 flex flex-col justify-center">
             <h1 className="font-display text-5xl font-semibold leading-[1.05] text-white md:text-7xl">
               Get Day AI
             </h1>
 
-            <p className="mt-4 text-center font-display text-3xl font-bold italic leading-[1.1] text-gold md:whitespace-nowrap md:text-5xl">
+            <p className="mt-3 text-center font-display text-3xl font-bold italic leading-[1.1] text-gold md:mt-4 md:whitespace-nowrap md:text-5xl">
               If you want to dominate, automate.
             </p>
 
-            <div className="mt-8 inline-flex items-center gap-x-3 self-start rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[11px] font-bold tracking-[0.25em] text-gold md:text-xs">
+            <div className="mt-5 inline-flex items-center gap-x-3 self-start rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[11px] font-bold tracking-[0.25em] text-gold md:mt-8 md:text-xs">
               <span>CALLS</span><span className="opacity-60">·</span>
               <span>INTAKE</span><span className="opacity-60">·</span>
               <span>SCHEDULING</span><span className="opacity-60">·</span>
@@ -96,16 +96,16 @@ function Index() {
               <span>OPERATIONS</span>
             </div>
 
-            <h2 className="mt-10 text-center font-display text-4xl font-semibold italic leading-[1.1] text-gold md:text-6xl">
+            <h2 className="mt-6 text-center font-display text-4xl font-semibold italic leading-[1.1] text-gold md:mt-10 md:text-6xl">
               AI for Ease, Efficiency, Revenue.
             </h2>
 
-            <p className="mt-6 text-center font-display text-3xl font-semibold italic leading-[1.1] text-white md:text-5xl">
+            <p className="mt-4 text-center font-display text-3xl font-semibold italic leading-[1.1] text-white md:mt-6 md:text-5xl">
               AI Created &amp; Customized for You. AI That Fits. AI <span className="font-bold">YOUR</span> Way.
             </p>
           </div>
 
-          <div className="relative flex min-h-[420px] items-end justify-center md:min-h-0 md:justify-end">
+          <div className="relative flex min-h-[280px] items-end justify-center md:min-h-0 md:justify-end">
             <img
               src={novaImg.url}
               alt="Dr. Nova Day"
