@@ -84,7 +84,7 @@ function Index() {
               Get Day AI
             </h1>
 
-            <p className="mt-4 font-display text-3xl font-bold italic leading-[1.1] text-gold md:text-5xl">
+            <p className="mt-4 text-center font-display text-3xl font-bold italic leading-[1.1] text-gold whitespace-nowrap md:text-5xl">
               If you want to dominate, automate.
             </p>
 
