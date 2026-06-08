@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
 import heroImg from "../assets/hero.jpg";
 
-import novaImg from "../assets/nova-day.jpg";
+import novaImg from "../assets/nova-white-suit.png.asset.json";
 import { SiteLayout } from "../components/site/SiteLayout";
 
 export const Route = createFileRoute("/")({
@@ -77,8 +77,8 @@ function Index() {
     <SiteLayout>
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border/40">
-        <img src={heroImg} alt="" aria-hidden="true" width={1920} height={1024} className="absolute inset-0 h-full w-full object-cover opacity-40" />
-        <div className="absolute inset-0 bg-navy-deep/85" />
+        <img src={heroImg} alt="Dr. Nova Day" width={1920} height={1024} className="absolute inset-0 h-full w-full object-cover object-right" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/80 to-transparent" />
         <div className="relative mx-auto grid max-w-[1400px] gap-10 px-5 py-20 md:grid-cols-[1.4fr_1fr] md:py-28">
           <div>
             <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Custom AI Revenue Generating Systems</p>
@@ -234,7 +234,7 @@ function Index() {
         <div className="mx-auto grid max-w-[1200px] gap-12 px-5 md:grid-cols-[1fr_1.3fr] md:items-center">
           <div className="relative">
             <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-gold/30 to-transparent blur-2xl" />
-            <img src={novaImg} alt="Dr. Nova Day, EdD" width={1024} height={1536} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
+            <img src={novaImg.url} alt="Dr. Nova Day, EdD" width={1366} height={768} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
           </div>
           <div>
             <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">About</p>
