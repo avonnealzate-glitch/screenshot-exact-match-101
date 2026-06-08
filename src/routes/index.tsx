@@ -188,32 +188,6 @@ function Index() {
         </div>
       </section>
 
-      {/* CTA OFFER */}
-      <section className="border-y border-border/40 bg-navy py-24">
-        <div className="mx-auto max-w-[1100px] px-5">
-          <div className="rounded-2xl border-2 border-gold bg-navy-deep p-10 text-center md:p-16">
-            <h2 className="font-display text-4xl font-semibold text-white md:text-5xl">
-              Ready to Put AI to Work in Your Business?
-            </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
-              Book a free 20-minute strategy call. We'll identify exactly where AI can save you time and grow your revenue — and include a free AI Visibility Audit showing how your business appears in AI search.
-            </p>
-            <p className="mt-6 text-gold">
-              This call is for business owners ready to take action.
-            </p>
-            <p className="mt-2 text-sm text-foreground/60">
-              Best for businesses generating $10k+/month looking to scale with AI.
-            </p>
-            <a
-              href="tel:+14702292626"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-8 py-3 text-base font-semibold text-navy-deep transition-all hover:bg-gold-bright"
-            >
-              Book My Strategy Call
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* TESTIMONIALS */}
       <section className="py-24">
         <div className="mx-auto max-w-[1400px] px-5">
