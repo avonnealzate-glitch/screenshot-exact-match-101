@@ -90,7 +90,7 @@ function Index() {
             AI for <span className="text-gold">Ease</span>, <span className="text-gold">Efficiency</span>, <span className="text-gold">Revenue</span>.
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-foreground/85">
-            AI Created &amp; Customized for You. AI That Fits. AI Your Way.
+            AI Created &amp; Customized for You. AI That Fits. AI YOUR Way.
           </p>
         </div>
 
