@@ -236,9 +236,6 @@ function Index() {
                     )}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-foreground/70">{copy}</p>
-                  <a href="tel:+14702292626" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold hover:text-gold-bright">
-                    Get Started <ArrowRight size={14} />
-                  </a>
                 </div>
               );
             })}
