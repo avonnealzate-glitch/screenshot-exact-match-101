@@ -84,6 +84,10 @@ function Index() {
               Get Day AI
             </h1>
 
+            <p className="mt-4 font-display text-3xl font-bold italic leading-[1.1] text-gold md:text-5xl">
+              If you want to dominate, automate.
+            </p>
+
             <div className="mt-8 inline-flex items-center gap-x-3 self-start rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[11px] font-bold tracking-[0.25em] text-gold md:text-xs">
               <span>CALLS</span><span className="opacity-60">·</span>
               <span>INTAKE</span><span className="opacity-60">·</span>
@@ -247,7 +251,7 @@ function Index() {
         <div className="mx-auto max-w-[1100px] px-5">
           <div className="rounded-2xl border-2 border-gold bg-navy-deep p-10 text-center md:p-16">
             <h2 className="font-display text-4xl font-semibold text-white md:text-5xl">
-              Ready to Put AI to Work in Your Business?
+              If you want to dominate, automate.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
               Book a free 20-minute strategy call. We'll identify exactly where AI can save you time and grow your revenue — and include a free AI Visibility Audit showing how your business appears in AI search.
