@@ -219,19 +219,8 @@ function Index() {
         </div>
       </section>
 
-      {/* HEAR IT FOR YOURSELF */}
-      <section id="contact" className="bg-gold py-24 text-navy-deep">
-        <div className="mx-auto max-w-[1000px] px-5 text-center">
-          <h2 className="font-display text-5xl font-semibold md:text-6xl">Hear It For Yourself</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-85">
-            Call Ava right now and hear exactly what your customers will hear — a live AI that answers, qualifies, and books appointments 24/7.
-          </p>
-          <a href="tel:+14702292626" className="mt-8 inline-flex items-center gap-3 rounded-full bg-navy-deep px-8 py-4 text-lg font-semibold text-gold transition-transform hover:scale-105">
-            <Phone size={20} /> Call Ava Now
-          </a>
-          <div className="mt-6 font-display text-5xl font-bold">(470) 229-2626</div>
-        </div>
-      </section>
+
+
 
       {/* TESTIMONIALS */}
       <section className="py-24">
@@ -264,16 +253,25 @@ function Index() {
             </p>
           </div>
           <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {servicesInclude.map(([title, copy]) => (
-              <div key={title} className="rounded-xl border border-border/60 bg-card/60 p-6">
-                <div className="text-[10px] font-bold tracking-widest text-gold">CUSTOM · 1-ON-1</div>
-                <h3 className="mt-3 font-display text-xl font-semibold">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-foreground/70">{copy}</p>
-                <a href="#contact" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold hover:text-gold-bright">
-                  Get Started <ArrowRight size={14} />
-                </a>
-              </div>
-            ))}
+            {servicesInclude.map((entry) => {
+              const [title, copy, isNew] = entry as readonly [string, string, boolean?];
+              return (
+                <div key={title} className="rounded-xl border border-border/60 bg-card/60 p-6">
+                  <h3 className="font-display text-xl font-semibold">
+                    {title}
+                    {isNew && (
+                      <span className="ml-2 inline-flex items-center rounded-full bg-gold px-2 py-0.5 align-middle text-[10px] font-bold tracking-widest text-navy-deep">
+                        NEW
+                      </span>
+                    )}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground/70">{copy}</p>
+                  <a href="tel:+14702292626" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold hover:text-gold-bright">
+                    Get Started <ArrowRight size={14} />
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
