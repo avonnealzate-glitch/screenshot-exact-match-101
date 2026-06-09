@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
-import novaImg from "../assets/nova-white-suit.png.asset.json";
+import novaImg from "../assets/dr-day-white-suit.png.asset.json";
 import { SiteLayout } from "../components/site/SiteLayout";
 
 
@@ -123,7 +123,7 @@ function Index() {
             </h2>
 
             <p className="mt-4 text-center font-display text-xl font-semibold italic leading-[1.1] text-white sm:text-2xl md:mt-6 md:text-5xl">
-              AI Created &amp; Customized for You. AI That Fits. AI <span className="font-bold">YOUR</span> Way.
+              AI Created &amp; Customized for You. AI That Fits. AI <span className="font-bold" style={{ color: "#c9a84c" }}>YOUR</span> Way.
             </p>
           </div>
 
