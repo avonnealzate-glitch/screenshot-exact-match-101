@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
-import novaImg from "../assets/nova-day.jpg";
+import novaImg from "../assets/nova-white-suit.png.asset.json";
 import { SiteLayout } from "../components/site/SiteLayout";
 
 
@@ -100,8 +100,8 @@ function Index() {
       <section className="relative border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
         <div className="absolute inset-y-0 left-0 w-[4px] bg-gold" />
 
-        <div className="mx-auto grid max-w-[1400px] grid-cols-[1.2fr_1fr] items-stretch gap-6 px-6 py-12 md:px-8 md:py-20">
-          <div className="relative z-10 flex flex-col justify-center">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-[minmax(0,1.2fr)_minmax(360px,1fr)] items-stretch gap-6 px-6 py-12 md:px-8 md:py-20">
+          <div className="relative z-10 flex min-w-0 flex-col justify-center">
             <h1 className="font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl md:text-7xl">
               Get Day AI
             </h1>
@@ -129,7 +129,7 @@ function Index() {
 
           <div className="locked-hero-image-container hero-image-container" style={lockedHeroImageContainerStyle}>
             <img
-              src={novaImg}
+              src={novaImg.url}
               alt="Dr. Nova Day"
               className="locked-hero-image hero-image"
               style={lockedHeroImageStyle}
@@ -297,7 +297,7 @@ function Index() {
         <div className="mx-auto grid max-w-[1200px] gap-12 px-5 md:grid-cols-[1fr_1.3fr] md:items-center">
           <div className="relative">
             <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-gold/30 to-transparent blur-2xl" />
-            <img src={novaImg} alt="Dr. Nova Day, EdD" width={1024} height={1536} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
+            <img src={novaImg.url} alt="Dr. Nova Day, EdD" width={1024} height={1536} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
           </div>
           <div>
             <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">About</p>
