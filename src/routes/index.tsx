@@ -100,8 +100,8 @@ function Index() {
       <section className="relative border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
         <div className="absolute inset-y-0 left-0 w-[4px] bg-gold" />
 
-        <div className="mx-auto grid max-w-[1400px] grid-cols-[1.2fr_1fr] items-stretch gap-6 px-6 py-12 md:px-8 md:py-20">
-          <div className="relative z-10 flex flex-col justify-center">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-[minmax(0,1.2fr)_minmax(360px,1fr)] items-stretch gap-6 px-6 py-12 md:px-8 md:py-20">
+          <div className="relative z-10 flex min-w-0 flex-col justify-center">
             <h1 className="font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl md:text-7xl">
               Get Day AI
             </h1>
