@@ -29,7 +29,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <div className="font-display text-2xl font-semibold text-gold">Get Day AI</div>
-            <p className="mt-2 font-display italic text-gold-soft">AI That Fits. Businesses That Scale.</p>
+            <p className="mt-2 font-display italic text-gold-soft">AI That Fits. AI For You.</p>
             <p className="mt-4 max-w-xl text-sm text-foreground/70">
               Custom AI Revenue Generating Systems built for every business — any size, any industry, any market.
               Designed and deployed by Dr. Nova Day, EdD.
