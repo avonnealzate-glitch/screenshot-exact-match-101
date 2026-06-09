@@ -109,7 +109,7 @@ function Index() {
             <img
               src={novaImg.url}
               alt="Dr. Nova Day"
-              className="relative z-10 h-full w-full object-contain object-bottom"
+              className="relative z-10 h-full w-full object-cover object-center"
             />
           </div>
         </div>
