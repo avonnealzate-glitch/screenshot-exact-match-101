@@ -207,9 +207,15 @@ function Index() {
                 <div className="text-xs font-bold uppercase tracking-widest text-gold">{s.agent}</div>
                 <h3 className="mt-2 font-display text-2xl font-semibold">{s.name}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/75">{s.copy}</p>
-                <Link to={s.to} className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-5 py-2 text-sm font-semibold text-navy-deep transition-all group-hover:bg-gold-bright">
-                  Book a Demo <ArrowRight size={14} />
-                </Link>
+                {s.agent === "Gia" ? (
+                  <a href="tel:+14707779005" className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-5 py-2 text-sm font-semibold text-navy-deep transition-all group-hover:bg-gold-bright">
+                    Call Gia to Schedule Your Free Audit <ArrowRight size={14} />
+                  </a>
+                ) : (
+                  <Link to={s.to} className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-5 py-2 text-sm font-semibold text-navy-deep transition-all group-hover:bg-gold-bright">
+                    Book a Demo <ArrowRight size={14} />
+                  </Link>
+                )}
               </div>
             ))}
           </div>
