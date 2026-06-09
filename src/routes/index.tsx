@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
-import novaImg from "../assets/nova-day.jpg";
+import novaImg from "../assets/nova-white-suit.png.asset.json";
 import { SiteLayout } from "../components/site/SiteLayout";
 
 
