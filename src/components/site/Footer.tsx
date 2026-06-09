@@ -3,11 +3,10 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const industries = [
   { to: "/legal", label: "Legal" },
-  { to: "/cdl", label: "CDL Schools AI" },
-  { to: "/healthcare", label: "Health Careers Schools" },
+  { to: "/cdl", label: "Education" },
   { to: "/realtors", label: "Real Estate" },
   { to: "/home-services", label: "Home Services" },
-  { to: "/geo", label: "AI Search Visibility" },
+  { to: "/geo", label: "AI" },
 ] as const;
 
 const services = [
