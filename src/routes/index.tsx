@@ -97,7 +97,7 @@ function Index() {
   return (
     <SiteLayout>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
+      <section className="relative border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
         <div className="absolute inset-y-0 left-0 w-[4px] bg-gold" />
 
         <div className="mx-auto grid max-w-[1400px] grid-cols-[1.2fr_1fr] items-stretch gap-6 px-6 py-12 md:px-8 md:py-20">
@@ -127,11 +127,11 @@ function Index() {
             </p>
           </div>
 
-          <div className="hero-image-container" style={lockedHeroImageContainerStyle}>
+          <div className="locked-hero-image-container hero-image-container" style={lockedHeroImageContainerStyle}>
             <img
               src={novaImg.url}
               alt="Dr. Nova Day"
-              className="hero-image"
+              className="locked-hero-image hero-image"
               style={lockedHeroImageStyle}
             />
           </div>
