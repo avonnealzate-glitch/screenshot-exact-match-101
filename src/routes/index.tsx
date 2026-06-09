@@ -123,7 +123,8 @@ function Index() {
             </h2>
 
             <p className="mt-4 text-center font-display text-xl font-semibold italic leading-[1.1] text-white sm:text-2xl md:mt-6 md:text-5xl">
-              AI Created &amp; Customized for You. AI That Fits. AI <span className="font-bold" style={{ color: "#c9a84c" }}>YOUR</span> Way.
+              AI Created &amp; Customized for You. AI That Fits.<br />
+              AI <span className="font-bold" style={{ color: "#c9a84c" }}>YOUR</span> Way.
             </p>
           </div>
 
