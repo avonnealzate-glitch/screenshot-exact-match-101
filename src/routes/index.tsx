@@ -110,7 +110,7 @@ function Index() {
               If you want to dominate, automate.
             </p>
 
-            <div className="mt-5 inline-flex flex-wrap items-center gap-x-3 self-start rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[10px] font-bold tracking-[0.25em] text-gold md:mt-8 md:text-xs">
+            <div className="mt-5 inline-flex flex-nowrap items-center gap-x-3 self-start rounded-full border border-gold/40 bg-gold/10 px-5 py-2.5 text-[10px] font-bold tracking-[0.25em] text-gold md:mt-8 md:text-xs">
               <span>CALLS</span><span className="opacity-60">·</span>
               <span>INTAKE</span><span className="opacity-60">·</span>
               <span>SCHEDULING</span><span className="opacity-60">·</span>
