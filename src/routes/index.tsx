@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Search, Headset, Bot, BarChart3, Mic, Users, ArrowRight, Star } from "lucide-react";
-import novaImg from "../assets/nova-white-suit.png.asset.json";
+import novaImg from "../assets/nova-day.jpg";
 import { SiteLayout } from "../components/site/SiteLayout";
 
 
@@ -71,11 +71,33 @@ const testimonials = [
   { quote: "Get Day AI is the only consultant who promised revenue and delivered it.", name: "Alicia W.", role: "CEO, Professional Services" },
 ];
 
+const lockedHeroImageContainerStyle = {
+  position: "relative",
+  display: "flex",
+  width: "100%",
+  height: "100%",
+  minHeight: "500px",
+  overflow: "visible",
+  borderRadius: 0,
+} as const;
+
+const lockedHeroImageStyle = {
+  position: "absolute",
+  inset: 0,
+  width: "100%",
+  height: "100%",
+  minHeight: "500px",
+  objectFit: "contain",
+  objectPosition: "bottom center",
+  maxWidth: "none",
+  borderRadius: 0,
+} as const;
+
 function Index() {
   return (
     <SiteLayout>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
+      <section className="relative border-b border-border/40" style={{ backgroundColor: "#0a1628" }}>
         <div className="absolute inset-y-0 left-0 w-[4px] bg-gold" />
 
         <div className="mx-auto grid max-w-[1400px] grid-cols-[1.2fr_1fr] items-stretch gap-6 px-6 py-12 md:px-8 md:py-20">
@@ -105,11 +127,12 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative flex min-h-[400px] items-end justify-end md:min-h-[600px]">
+          <div className="locked-hero-image-container hero-image-container" style={lockedHeroImageContainerStyle}>
             <img
-              src={novaImg.url}
+              src={novaImg}
               alt="Dr. Nova Day"
-              className="relative z-10 h-full w-full object-contain object-center"
+              className="locked-hero-image hero-image"
+              style={lockedHeroImageStyle}
             />
           </div>
         </div>
@@ -274,7 +297,7 @@ function Index() {
         <div className="mx-auto grid max-w-[1200px] gap-12 px-5 md:grid-cols-[1fr_1.3fr] md:items-center">
           <div className="relative">
             <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-gold/30 to-transparent blur-2xl" />
-            <img src={novaImg.url} alt="Dr. Nova Day, EdD" width={1366} height={768} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
+            <img src={novaImg} alt="Dr. Nova Day, EdD" width={1024} height={1536} loading="lazy" className="relative rounded-2xl border border-gold/30 object-cover" />
           </div>
           <div>
             <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">About</p>

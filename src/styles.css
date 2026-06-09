@@ -102,3 +102,27 @@
   }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
 }
+
+@layer components {
+  .locked-hero-image-container {
+    position: relative !important;
+    display: flex !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 500px !important;
+    overflow: visible !important;
+    border-radius: 0 !important;
+  }
+
+  .locked-hero-image {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 500px !important;
+    object-fit: contain !important;
+    object-position: bottom center !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+  }
+}
