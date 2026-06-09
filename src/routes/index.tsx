@@ -247,10 +247,7 @@ function Index() {
       <section className="border-y border-border/40 bg-navy py-24">
         <div className="mx-auto max-w-[1400px] px-5">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-5xl font-semibold">Services Include:</h2>
-            <p className="mt-4 text-foreground/75">
-              Every engagement is custom. Every system is built 1-on-1 for your business — designed to generate revenue, eliminate waste, and scale what's working.
-            </p>
+            <h2 className="font-display text-5xl font-semibold">Services Include</h2>
           </div>
           <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {servicesInclude.map((entry) => {
