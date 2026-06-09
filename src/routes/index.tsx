@@ -71,6 +71,28 @@ const testimonials = [
   { quote: "Get Day AI is the only consultant who promised revenue and delivered it.", name: "Alicia W.", role: "CEO, Professional Services" },
 ];
 
+const lockedHeroImageContainerStyle = {
+  position: "relative",
+  display: "flex",
+  width: "100%",
+  height: "100%",
+  minHeight: "500px",
+  overflow: "visible",
+  borderRadius: 0,
+} as const;
+
+const lockedHeroImageStyle = {
+  position: "absolute",
+  inset: 0,
+  width: "100%",
+  height: "100%",
+  minHeight: "500px",
+  objectFit: "contain",
+  objectPosition: "bottom center",
+  maxWidth: "none",
+  borderRadius: 0,
+} as const;
+
 function Index() {
   return (
     <SiteLayout>
@@ -105,11 +127,12 @@ function Index() {
             </p>
           </div>
 
-          <div className="relative flex min-h-[400px] items-end justify-end md:min-h-[600px]">
+          <div className="hero-image-container" style={lockedHeroImageContainerStyle}>
             <img
               src={novaImg.url}
               alt="Dr. Nova Day"
-              className="relative z-10 h-full w-full object-contain object-center"
+              className="hero-image"
+              style={lockedHeroImageStyle}
             />
           </div>
         </div>
